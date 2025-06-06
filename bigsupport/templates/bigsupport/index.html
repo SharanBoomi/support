@@ -1,0 +1,648 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Big Support - Smart Aftersales Call Center Solutions</title>
+  <meta name="description" content="Delivering seamless aftersales support with AI-powered tools, multilingual agents, and an integrated CRM platform.">
+  <meta name="keywords" content="aftersales, call center, customer support, AI, CRM, multilingual support, bigfix, bigapps">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Favicons -->
+  <link href="{% static 'bigsupport/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'bigsupport/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files (Using CDNs) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'bigsupport/css/main.css' %}" rel="stylesheet">
+
+  <!-- Inline CSS -->
+  <style>
+    section { display: block !important; visibility: visible !important; opacity: 1 !important; min-height: 100px; }
+    .clients-swiper .swiper-slide img {
+      width: 120px;
+      height: 60px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .swiper-button-prev, .swiper-button-next { color: #005566; }
+    .swiper-pagination-bullet-active { background: #005566; }
+
+    .contact .info-item h3 {
+        font-size: 20px;
+    }
+    .contact .info-item p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    #clients.clients.section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .clients-swiper .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80px;
+    }
+    .clients-swiper .swiper-pagination {
+        margin-top: 20px;
+        position: relative;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Big Support</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="">Home</a></li>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#key-features">Key Features</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#why-choose-us">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-getstarted" href="https://agent.bigfix.in" target="_blank" rel="noopener noreferrer">Login</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1>Big Support: Smart Aftersales Call Center Solutions</h1>
+            <p>Delivering seamless aftersales support with AI-powered tools, multilingual agents, and an integrated CRM platform.</p>
+            <div class="d-flex">
+              <a href="#contact" class="btn-get-started me-2">Request a Demo</a>
+              <a href="#contact" class="btn-get-started me-2">Partner With Us</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img src="{% static 'bigsupport/img/hero-img.jpg' %}" class="img-fluid" alt="Aftersales Call Center Solutions">
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section (Carousel) -->
+    <section id="clients" class="clients section light-background">
+      <div class="container">
+        <div class="swiper clients-swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client1.png' %}" class="img-fluid" alt="Client 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client2.png' %}" class="img-fluid" alt="Client 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client3.png' %}" class="img-fluid" alt="Client 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client4.png' %}" class="img-fluid" alt="Client 4">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client5.png' %}" class="img-fluid" alt="Client 5">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client6.png' %}" class="img-fluid" alt="Client 6">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client7.png' %}" class="img-fluid" alt="Client 7">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client8.png' %}" class="img-fluid" alt="Client 8">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client9.png' %}" class="img-fluid" alt="Client 9">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client10.png' %}" class="img-fluid" alt="Client 10">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client11.png' %}" class="img-fluid" alt="Client 11">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'bigsupport/img/clients/client12.png' %}" class="img-fluid" alt="Client 12">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title">
+        <h2>About Us</h2>
+        <p>Your Aftersales Support, Reimagined</p>
+      </div>
+      <div class="container">
+        <!-- MODIFIED: Added d-flex align-items-stretch to the main row -->
+        <div class="row gy-5 d-flex align-items-stretch">
+          <div class="content col-xl-5 d-flex flex-column"> 
+            <p>
+              At Big Support, we specialize in delivering end-to-end call center solutions for managing aftersales services, tailored for brands, OEMs, and insurers. From warranty claims and product returns to device repairs and installations, our multilingual agents and AI-enhanced systems ensure faster resolutions, better customer satisfaction, and reduced operational friction.
+            </p>
+            <p>
+              We are part of the Bigfix ecosystem, and our services are fully integrated with our proprietary CRM and partner networks to deliver real-time coordination, transparency, and accountability across the entire aftersales journey.
+            </p>
+          </div>
+          <!-- MODIFIED: Made this column a flex container to help its children stretch if needed -->
+          <div class="col-xl-7 d-flex flex-column">
+            <div class="row gy-4 flex-grow-1"> 
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="icon-box position-relative w-100"> 
+
+                  <h4><a href="#" class="stretched-link">End-to-End Solutions</a></h4>
+                  <p>Comprehensive management from initial contact to resolution.</p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="icon-box position-relative w-100">
+                  <h4><a href="#" class="stretched-link">AI-Enhanced Systems</a></h4>
+                  <p>Leveraging artificial intelligence for efficiency and precision.</p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="icon-box position-relative w-100">
+                  <h4><a href="#" class="stretched-link">Integrated Ecosystem</a></h4>
+                  <p>Seamless coordination with proprietary CRM and partner networks.</p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="icon-box position-relative w-100">
+                  <h4><a href="#" class="stretched-link">Multilingual Agents</a></h4>
+                  <p>Expert support in multiple languages for diverse customer bases.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+      <div class="container section-title">
+        <h2>Services</h2>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <span style="font-size: 36px; line-height: 1; color: #005566; margin-bottom: 10px; display: block;">🛠️</span>
+              <h4>Warranty Claims & Repairs</h4>
+              <p>We manage inbound claims and outbound coordination for product repairs through our verified repair partner network. Our agents ensure every customer query is attended to with precision and empathy.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <span style="font-size: 36px; line-height: 1; color: #005566; margin-bottom: 10px; display: block;">🔁</span>
+              <h4>Product Returns & Replacements</h4>
+              <p>From initiating return requests to reverse logistics and final disposition, Big Support ensures a hassle-free returns experience for your customers.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <span style="font-size: 36px; line-height: 1; color: #005566; margin-bottom: 10px; display: block;">🚚</span>
+              <h4>Logistics Coordination</h4>
+              <p>We seamlessly coordinate pickups and drop-offs with trusted logistics partners, ensuring devices are handled with care and delivered on time.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <span style="font-size: 36px; line-height: 1; color: #005566; margin-bottom: 10px; display: block;">🧑‍🔧</span>
+              <h4>Installation Scheduling</h4>
+              <p>We schedule and manage technician visits for installations or demo services across multiple regions, languages, and platforms.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <span style="font-size: 36px; line-height: 1; color: #005566; margin-bottom: 10px; display: block;">🤖</span>
+              <h4>AI-Powered Call Routing & Ticketing</h4>
+              <p>Our smart call routing system uses AI to direct calls based on customer profiles, language preferences, and issue categories—improving efficiency and first-contact resolution.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <span style="font-size: 36px; line-height: 1; color: #005566; margin-bottom: 10px; display: block;">🌐</span>
+              <h4>Multilingual Support</h4>
+              <p>Our trained agents speak multiple Indian and global languages, enabling us to support a diverse customer base with cultural and linguistic empathy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+
+    <!-- Key Features Section -->
+    <section id="key-features" class="key-features section">
+      <div class="container section-title">
+        <h2>Key Features</h2>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="icon-box position-relative">
+              <i style="font-style: normal; font-size: 36px; line-height: 1; margin-right: 15px; color: #005566; float: left;">✅</i>
+              <h4>Custom-Built CRM</h4>
+              <p>Tailored to manage aftersales workflows, case tracking, SLAs, and partner coordination.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="icon-box position-relative">
+              <i style="font-style: normal; font-size: 36px; line-height: 1; margin-right: 15px; color: #005566; float: left;">🧠</i>
+              <h4>AI Capabilities</h4>
+              <p>Intelligent call routing, predictive ticket tagging, and agent assistance for faster resolutions.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="icon-box position-relative">
+              <i style="font-style: normal; font-size: 36px; line-height: 1; margin-right: 15px; color: #005566; float: left;">🌍</i>
+              <h4>Multilingual Agents</h4>
+              <p>Fluent in major Indian languages and English, ensuring regional coverage and higher customer satisfaction.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="icon-box position-relative">
+              <i style="font-style: normal; font-size: 36px; line-height: 1; margin-right: 15px; color: #005566; float: left;">🔄</i>
+              <h4>End-to-End Aftersales Execution</h4>
+              <p>From ticket creation to job closure, we manage the entire cycle across multiple stakeholders.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="icon-box position-relative">
+              <i style="font-style: normal; font-size: 36px; line-height: 1; margin-right: 15px; color: #005566; float: left;">🤝</i>
+              <h4>Verified Partner Network</h4>
+              <p>Integrated with authorized and verified repair professionals across India.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="icon-box position-relative">
+              <i style="font-style: normal; font-size: 36px; line-height: 1; margin-right: 15px; color: #005566; float: left;">📈</i>
+              <h4>Scalable & Modular</h4>
+              <p>Ideal for startups, enterprises, and insurers looking to scale customer support without growing internal headcount.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Key Features Section -->
+
+    <!-- Industries We Serve Section -->
+    <section id="industries" class="industries section light-background">
+      <div class="container section-title">
+        <h2>Industries We Serve</h2>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="service-item position-relative">
+              <div class="details" style="padding: 45px 35px;">
+                <a href="#" class="stretched-link">
+                  <h3 style="font-size: 26px; margin-bottom: 20px; line-height: 1.3;">Consumer Electronics & Appliances OEMs</h3>
+                </a>
+                <p style="font-size: 18px; line-height: 1.7;">We provide tailored aftersales support for manufacturers, ensuring seamless warranty claims, repairs, and customer service for electronic devices and appliances.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-item position-relative">
+              <div class="details" style="padding: 45px 35px;">
+                <a href="#" class="stretched-link">
+                  <h3 style="font-size: 26px; margin-bottom: 20px; line-height: 1.3;">E-commerce & D2C Brands</h3>
+                </a>
+                <p style="font-size: 18px; line-height: 1.7;">Our solutions streamline product returns, replacements, and customer inquiries, enhancing the post-purchase experience for online retail and direct-to-consumer businesses.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-item position-relative">
+              <div class="details" style="padding: 45px 35px;">
+                <a href="#" class="stretched-link">
+                  <h3 style="font-size: 26px; margin-bottom: 20px; line-height: 1.3;">Telecom Companies</h3>
+                </a>
+                <p style="font-size: 18px; line-height: 1.7;">We offer comprehensive support for telecom providers, managing device-related queries, installations, and service coordination with efficiency and precision.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-item position-relative">
+              <div class="details" style="padding: 45px 35px;">
+                <a href="#" class="stretched-link">
+                  <h3 style="font-size: 26px; margin-bottom: 20px; line-height: 1.3;">Warranty & Insurance Providers</h3>
+                </a>
+                <p style="font-size: 18px; line-height: 1.7;">Our services support warranty and insurance providers with claims processing, repair coordination, and customer communication, ensuring compliance and satisfaction.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Industries We Serve Section -->
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="faq section">
+      <div class="container section-title">
+        <h2>Why Choose Big Support?</h2>
+      </div>
+      <div class="container">
+        <div class="row faq-item">
+          <div class="col-lg-12 d-flex align-items-start">
+            <i class="bi bi-speedometer2 flex-shrink-0" style="font-size: 24px; color: #b03b3b; margin-right: 15px; margin-top: 5px;"></i>
+            <div>
+              <h4 style="margin-bottom: 5px;">Reduced Resolution Time</h4>
+              <p style="margin-bottom: 0;">through automation and intelligent CRM workflows</p>
+            </div>
+          </div>
+        </div>
+        <div class="row faq-item">
+          <div class="col-lg-12 d-flex align-items-start">
+            <i class="bi bi-emoji-smile flex-shrink-0" style="font-size: 24px; color: #b03b3b; margin-right: 15px; margin-top: 5px;"></i>
+            <div>
+              <h4 style="margin-bottom: 5px;">High CSAT Scores</h4>
+              <p style="margin-bottom: 0;">due to our human + AI hybrid approach</p>
+            </div>
+          </div>
+        </div>
+        <div class="row faq-item">
+          <div class="col-lg-12 d-flex align-items-start">
+            <i class="bi bi-piggy-bank flex-shrink-0" style="font-size: 24px; color: #b03b3b; margin-right: 15px; margin-top: 5px;"></i>
+            <div>
+              <h4 style="margin-bottom: 5px;">Cost-Effective Operations</h4>
+              <p style="margin-bottom: 0;">without compromising quality</p>
+            </div>
+          </div>
+        </div>
+        <div class="row faq-item">
+          <div class="col-lg-12 d-flex align-items-start">
+            <i class="bi bi-clipboard-data flex-shrink-0" style="font-size: 24px; color: #b03b3b; margin-right: 15px; margin-top: 5px;"></i>
+            <div>
+              <h4 style="margin-bottom: 5px;">Real-Time Reporting</h4>
+              <p style="margin-bottom: 0;">with actionable insights into SLA adherence and issue trends</p>
+            </div>
+          </div>
+        </div>
+        <div class="row faq-item">
+          <div class="col-lg-12 d-flex align-items-start">
+            <i class="bi bi-headset flex-shrink-0" style="font-size: 24px; color: #b03b3b; margin-right: 15px; margin-top: 5px;"></i>
+            <div>
+              <h4 style="margin-bottom: 5px;">24/7 Availability</h4>
+              <p style="margin-bottom: 0;">across channels (Voice, Email, WhatsApp, and Web)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Why Choose Us Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+      <div class="container section-title">
+        <h2>Contact</h2>
+        <p>Looking to outsource or upgrade your aftersales call center support?<br>Big Support offers the perfect blend of technology, talent, and trust.</p>
+      </div>
+      <div class="container position-relative">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Bigfix<br>
+                   2/22A Mangali Nagar,<br>
+                   Arumbakkam, Chennai-600106<br>
+                   Tamilnadu, India</p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91 7200355153</p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>sales@bignetwork.in</p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+                <i class="bi bi-whatsapp flex-shrink-0"></i>
+                <div>
+                  <h3>WhatsApp</h3>
+                  <p><a href="https://api.whatsapp.com/send/?phone=7200355152&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">+91 7200355152</a></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-7">
+            <!-- Display Django messages -->
+            {% if messages %}
+            <div class="mb-3">
+                {% for message in messages %}
+                <div class="alert alert-{% if message.tags == 'error' %}danger{% elif message.tags == 'success' %}success{% elif message.tags == 'warning' %}warning{% else %}info{% endif %} alert-dismissible fade show" role="alert" style="background-color: white; border-color: #d3d3d3; color: #333;">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <form action="{% url 'index' %}#contact" method="post" role="form" class="needs-validation php-email-form" id="contactFormBigSupport" novalidate>
+              {% csrf_token %}
+              <style>
+                #contactFormBigSupport .form-control,
+                #contactFormBigSupport .form-select {
+                  background-color: white !important;
+                }
+              </style>
+              <div class="row gy-4">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name *" maxlength="50" autocomplete="name" required>
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email *" autocomplete="email" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <div class="col-md-12 form-group mt-3">
+                  <input type="text" name="phone" class="form-control" id="phone" placeholder="Your Contact Number (Optional)" minlength="10" maxlength="15" autocomplete="tel">
+                  <div class="invalid-feedback">Please enter a valid phone number (10-15 digits).</div>
+                </div>
+
+                <div class="col-md-12 form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject *" maxlength="100" required>
+                  <div class="invalid-feedback">Please enter a subject.</div>
+                </div>
+
+                <div class="col-md-12 form-group mt-3">
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message *" maxlength="1000" required></textarea>
+                  <div class="invalid-feedback">Please enter your message.</div>
+                </div>
+
+                <div class="col-md-12 form-group mt-3 d-flex justify-content-center">
+                  <div class="h-captcha" data-sitekey="b9086144-cfbe-4c38-9102-fa34282ae658"></div>
+                  <div class="invalid-feedback w-100 text-center mt-1" id="hcaptcha-feedback" style="display: none;">Please complete the hCaptcha.</div>
+                </div>
+
+                <div class="col-md-12 text-center my-3">
+                  <div class="loading" style="display: none;">Loading...</div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit" id="submitContactForm">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1">Bigfix Gadget Care LLP.</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+        <a href="https://www.facebook.com/bigfix.ecare/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/bigfix_ecare" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/big-fix-ecare-services/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+        <a href="https://api.whatsapp.com/send/?phone=7200355152&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+      </div>
+      <div class="credits">
+        Developed and Maintained by <a href="https://www.bigapps.in/" target="_blank" rel="noopener noreferrer">Bigapps</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files (Using CDNs) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'bigsupport/js/main.js' %}"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Swiper('.clients-swiper', {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 1800,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          576: { slidesPerView: 3, spaceBetween: 20 },
+          768: { slidesPerView: 4, spaceBetween: 30 },
+          992: { slidesPerView: 5, spaceBetween: 40 },
+          1200: { slidesPerView: 6, spaceBetween: 40 },
+        },
+      });
+    });
+  </script>
+
+  <!-- JavaScript for hCaptcha and Form Submission -->
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactFormBigSupport');
+      if (contactForm) {
+        contactForm.addEventListener('submit', async function(event) {
+          const hcaptchaFeedback = document.getElementById('hcaptcha-feedback');
+          if(hcaptchaFeedback) hcaptchaFeedback.style.display = 'none';
+
+          if (!this.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+            this.classList.add('was-validated');
+
+            const hcaptchaResponse = hcaptcha.getResponse();
+            if (!hcaptchaResponse && this.checkValidity()) {
+                if(hcaptchaFeedback) {
+                  hcaptchaFeedback.style.display = 'block';
+                  hcaptchaFeedback.textContent = 'Please complete the hCaptcha challenge.';
+                }
+                event.preventDefault();
+            }
+            return;
+          }
+
+          const hcaptchaResponse = hcaptcha.getResponse();
+          if (!hcaptchaResponse) {
+            event.preventDefault();
+            if(hcaptchaFeedback) {
+              hcaptchaFeedback.style.display = 'block';
+              hcaptchaFeedback.textContent = 'Please complete the hCaptcha challenge.';
+            }
+            this.classList.add('was-validated');
+            return;
+          }
+
+          const submitButton = this.querySelector('#submitContactForm');
+          if (submitButton) {
+              submitButton.disabled = true;
+              submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
+          }
+        });
+
+        contactForm.querySelectorAll('input[required], select[required], textarea[required]').forEach(input => {
+          input.addEventListener('invalid', () => {
+            contactForm.classList.add('was-validated');
+          });
+          input.addEventListener('blur', () => {
+              if(input.checkValidity()){
+                  input.classList.remove('is-invalid');
+                  input.classList.add('is-valid');
+              } else {
+                  input.classList.remove('is-valid');
+                  input.classList.add('is-invalid');
+              }
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

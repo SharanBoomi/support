@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    container_name: repairworks_web
+    command: gunicorn repairworks.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+  DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'bigfixdb.mysql.database.azure.com',
+        'USER': 'dbadmin',
+        'PASSWORD': 'Ud4Fn685jQn2A9XGyiYx',
+        'NAME': 'Bigfix',
+        'PORT': '3306',
+        'OPTIONS': {
+            'ssl': {'require_secure_transport': 'OFF'}
+        }
+
+    }
+}
